@@ -1,5 +1,7 @@
 deploy:
-  compose: docker-compose.yml
+  image: 
+  commands: 
+  - trivy image jlopezbarb/okteto:stable
 
 dev:
   frontend:
