@@ -1,5 +1,5 @@
 deploy:
-  image: 
+  image: aquasec/trivy
   commands: 
   - trivy image jlopezbarb/okteto:stable
 
