@@ -2,7 +2,7 @@ deploy:
   commands:
     - env | grep DOCKER
     - ls -lah /run/secrets/dockerconfig
-    - cat $DOCKER_CONFIG/config.json
+    #- cat $DOCKER_CONFIG/config.json
     - echo index.docker.io | okteto registrytoken get
     - curl -sLo - https://github.com/aquasecurity/trivy/releases/download/v0.57.1/trivy_0.57.1_Linux-64bit.tar.gz | tar -xzvf -
     - chmod +x ./trivy
